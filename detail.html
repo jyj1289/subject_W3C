@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>책 상세 정보</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="book-details" style="padding: 20px;"></div>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = new URLSearchParams(window.location.search);
+            const isbn = params.get('isbn');
+            loadBookDetails(decodeURIComponent(isbn));
+        });
+    </script>
+</body>
+</html>
