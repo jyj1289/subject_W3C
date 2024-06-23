@@ -9,12 +9,5 @@
 <body>
     <div id="book-details" style="padding: 20px;"></div>
     <script src="script.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const params = new URLSearchParams(window.location.search);
-            const isbn = params.get('isbn');
-            loadBookDetails(decodeURIComponent(isbn));
-        });
-    </script>
 </body>
 </html>
