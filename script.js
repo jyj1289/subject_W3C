@@ -77,6 +77,7 @@ function loadBookDetails(title) {
                 <p><strong>판매가:</strong> ${salePrice}</p>
                 <p><strong>상태:</strong> ${status}</p>
                 <p><strong>소개:</strong> ${book.contents}...</p>
+                <button style="text-align:center"><a href="index.html" style="color: white">홈으로</a></button>
             `;
         } else {
             document.getElementById('book-details').innerHTML = `<p>책 정보를 찾을 수 없습니다.</p>`;
